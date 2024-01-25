@@ -1,0 +1,8 @@
+{
+  "label": "Tutorial",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Simple tutorial to learn all the basics."
+  }
+}
