@@ -35,7 +35,7 @@ You can also use the [Jinja]'s double curly brackets syntax to substitute enviro
 
 :::
 
-The syntax for the URL uses [sqlalchemy database URLs](https://docs.sqlalchemy.org/en/20/core/engines.html#database-urls). Since sqlite databases don't require a username and password, the **credential** field can be either set to null or omitted entirely. More details on setting and using credential keys and connections can be found at [Configure Database Connections](../topics/database).
+The syntax for the URL uses [sqlalchemy database URLs](https://docs.sqlalchemy.org/en/20/core/engines.html#database-urls). Since sqlite databases don't require a username and password, the **credential** field can be either set to null or omitted entirely. More details on setting and using credential keys and connections can be found at [Database Connections](../topics/database).
 
 The **connections** section should now look like this:
 

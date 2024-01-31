@@ -6,9 +6,9 @@ sidebar_position: 1
 
 ## Overview
 
-Squirrels is a low-code REST API framework designed to simplify and automate data analytics while easing the burden on data / analytics engineers and eliminating the need for API engineers. With a primary focus on reusability and flexibility, Squirrels allows for query logic to be shared across multiple front-end applications. The framework makes it easy to create REST APIs that generate complex SQL queries using query parameters for selected parameter values, and delivering tabular results as the response.
+Squirrels is a low-code REST API framework designed to simplify and automate data analytics. It eases the burden on data / analytics engineers and eliminates the need for API engineers to create data analytics APIs. With a primary focus on reusability and flexibility, Squirrels allows for query logic to be shared across multiple front-end applications. The framework makes it easy to create REST APIs that generate complex SQL queries using query parameters for selected parameter values, and delivering tabular results that can change behaviour based on selected values.
 
-For those familiar with [dbt](https://www.getdbt.com/), Squirrels is essentially the dbt for real-time data analytics. In fact, the project structure and CLI are intentionally made similar to dbt such that engineers who dbt can pick up Squirrels easily.
+For those familiar with [dbt](https://www.getdbt.com/), Squirrels is essentially the dbt for real-time dynamic data analytics. In fact, the project structure and CLI are intentionally made similar to dbt such that engineers who know dbt can pick up Squirrels easily.
 
 ## Main Features
 
@@ -18,7 +18,7 @@ Squirrels utilizes Jinja as a templating language for rendering complex SQL quer
 
 #### Model Dependencies
 
-Similar to [dbt](https://www.getdbt.com/), the **ref** function is available to define model dependencies, which is useful in creating real-time data pipelines. Models can even join the results of queries / models run on different databases!
+Similar to [dbt](https://www.getdbt.com/), the **ref** function is available to define model dependencies, which is useful in creating real-time data pipelines. Models can even join the results of queries coming from different databases!
 
 #### Cascading Parameters
 

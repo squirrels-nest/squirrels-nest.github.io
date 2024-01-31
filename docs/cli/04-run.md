@@ -15,7 +15,13 @@ optional arguments:
   --port PORT  The port to run on
 ```
 
-The default host is `127.0.0.1` and the default port is `4465`. While running, you can access http://127.0.0.1:4465 or http://localhost:4465 from the browser to interact with the Squirrels Testing UI. 
+The default host is `127.0.0.1` and the default port is `4465`. Behind the scenes, Squirrels run a FastAPI app. While running, you can access http://127.0.0.1:4465 or http://localhost:4465 from the browser to interact with the Squirrels Testing UI. 
+
+:::warning
+
+In a future version of Squirrels, we intend to make the Testing UI on a separate port than the other REST APIs. This means running two FastAPI apps on two different ports simultaneously, with the ability to terminate both servers at once.
+
+:::
 
 Assume you have a project named "my_proj" with a sample dataset named "my_ds". You can use the following REST APIs for requests to retrieve various JSON results:
 

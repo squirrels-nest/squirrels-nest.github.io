@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Squirrels',
   tagline: 'Create REST APIs for Data Analytics',
-  favicon: 'img/squirrels.png',
+  favicon: 'img/squirrels.ico',
 
   // Set the production url of your site here
   url: 'https://squirrels-nest.github.io',
@@ -18,6 +18,7 @@ const config: Config = {
   organizationName: 'squirrels-nest', // Usually your GitHub org/user name.
   projectName: 'squirrels-nest.github.io', // Usually your repo name.
   trailingSlash: false,
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -53,7 +54,7 @@ const config: Config = {
       title: 'Squirrels',
       logo: {
         alt: 'Squirrels Logo',
-        src: 'img/squirrels.png',
+        src: 'img/squirrels_large.png',
       },
       items: [
         {

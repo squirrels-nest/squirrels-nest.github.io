@@ -24,15 +24,15 @@ const FeatureList: FeatureItem[] = [
     image: require('@site/static/img/data_model.png').default,
     description: (
       <>
-        Create data models in SQL or Python! Like <a href="https://www.getdbt.com/">dbt</a>, 
-        use <code>ref()</code> for model dependencies. Models from different databases can 
-        be joined with a federate model.
+        Create data models in Jinja SQL or Python! Like <a href="https://www.getdbt.com/">dbt</a>, 
+        use <code>ref()</code> for model dependencies. You can even join views from
+        different database systems!
       </>
     ),
   },
   {
     title: 'Dataset Endpoints',
-    image: require('@site/static/img/dataset_api.png').default,
+    image: require('@site/static/img/running_squirrel.png').default,
     description: (
       <>
         Configure API endpoints for datasets in YAML! Use the <code>sqrl run</code> CLI 

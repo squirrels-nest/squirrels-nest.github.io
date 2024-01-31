@@ -8,7 +8,7 @@ For an expanded version of the "weather example" project, see this git repo here
 
 https://github.com/squirrels-nest/squirrels-weather-example
 
-It serves as an example of how to share common SQL functionality across multiple datasets while allowing their parameter or query definitions to differ. You can also see the [Design for Commonality and Variability](../topics/common-vary) page on sharing Jinja macros and Python modules across models or projects.
+It serves as an example of how to share common SQL functionality across multiple datasets while allowing their parameter or query definitions to differ.
 
 In addition, the following topic guides can be useful for certain Squirrels projects:
 - [Versioning Best Practices](../topics/versioning)

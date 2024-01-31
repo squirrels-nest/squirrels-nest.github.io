@@ -12,7 +12,7 @@ In these files, we will write a pipeline of sql transformations to return tabula
 
 :::info
 
-These sql query can be templated using Jinja, with access to a variety of dictionaries such as **prms**, **ctx**, and **traits**, which stand for "Parameter Set", "Context", and "Traits". More information about these variables can be found in the [Create SQL Models](../topics/models-sql) page. For now, just know that we can access parameters with `prms["parameter name"]` in Jinja, and access selected value(s) of the parameter by calling certain methods (such as **get_selected** or **get_selected_label**).
+These sql query can be templated using Jinja, with access to a variety of dictionaries such as **prms**, **ctx**, and **traits**, which stand for "Parameter Set", "Context", and "Traits". More information about these variables can be found in the [SQL Models](../topics/models-sql) page. For now, just know that we can access parameters with `prms["parameter name"]` in Jinja, and access selected value(s) of the parameter by calling certain methods (such as **get_selected** or **get_selected_label**).
 
 :::
 

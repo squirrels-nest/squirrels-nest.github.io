@@ -1,6 +1,6 @@
 # sqrl compile
 
-The `sqrl compile` command is used to facilitate the debugging process for SQL templates.
+The `sqrl compile` command is used to facilitate testing of generated SQL queries from SQL templates and parameter selections.
 
 All the details on command line arguments can be found using `sqrl compile -h`. The result is as follows:
 
@@ -26,4 +26,4 @@ All compiled SQL queries (and csv's if `--runquery` is used) are written to some
 
 Also, if `--select` is specified (in addition to `--dataset`), the compiled query of the selected model is printed in terminal. The `<dataset>/` folder will only contain the compiled query of the selected model as well (without the upstream models), unless `--runquery` is specified (since upstream model results must be created first in order to create the selected model result).
 
-For more information on using selection test sets, see [Squirrels Project File](../topics/project-file).
+For more information on using selection test sets, see the "selection_test_sets" section of the [Squirrels Project File](../topics/project-file) page.

@@ -13,6 +13,6 @@ packages:
 
 Running `sqrl deps` will create a new `sqrl_packages/` folder with subfolder `custom_name/`. Inside `custom_name/` is the contents of the `https://github.com/org/myrepo.git` repo at the `v0.1.0` git tag.
 
-Then, you can import python modules or Jinja macros defined in the `sqrl_packages/` folder. See [Design for Commonality and Variability](../topics/common-vary) for more details.
+Then, you can import python modules or Jinja macros defined in the `sqrl_packages/` folder.
 
-Note that the `sqrl_packages/` folder is included in the `.gitignore` file intentionally.
+Note that the `sqrl_packages/` folder is in the `.gitignore` file.

@@ -30,7 +30,7 @@ group_by_options = [
 
 The first two parameters to the **SelectParameterOption** constructors are the ID and label. The ID must be distinct across options and would never change in the future. If an API client associates ID "0" to mean "group by year", then that association should never be broken even if the label or the ordering of the dropdown options change.
 
-Arbitrary keyword arguments such as "dim_col" and "order_by_col" can be specified to the **SelectParameterOption** constructor which will be treated as custom fields to the parameter option that can be used later. For more info, see [Custom Fields for Parameter Options](../topics/custom-fields).
+Arbitrary keyword arguments such as "dim_col" and "order_by_col" can be specified to the **SelectParameterOption** constructor which will be treated as custom fields to the parameter option that can be used later. For more info, see the [Widget Parameters](../topics/parameters) page.
 
 :::note
 
