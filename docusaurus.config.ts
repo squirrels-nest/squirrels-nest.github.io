@@ -90,12 +90,16 @@ const config: Config = {
               to: '/docs/category/tutorial',
             },
             {
-              label: 'Topics',
-              to: '/docs/category/topics',
-            },
-            {
               label: 'CLI References',
               to: '/docs/category/cli-references',
+            },
+            {
+              label: 'Framework Topics',
+              to: '/docs/category/framework-topics',
+            },
+            {
+              label: 'Client Usage',
+              to: '/docs/category/client-usage',
             },
             {
               label: 'Python APIs',

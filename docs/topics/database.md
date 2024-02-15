@@ -27,7 +27,7 @@ This adds the `connections.py` file to the `pyconfigs/` folder.
 The `connections.py` file must have a **main** function with two arguments **connections** and **sqrl**.
 
 - **connections** is the output dictionary that is written to in the function. The keys should be strings, and the values are typically SQLAlchemy engines.
-- **sqrl** is an object of type [ConnectionArgs](../python/arguments/ConnectionArgs) that contains inputs/utilities you may choose to use. Some examples include:
+- **sqrl** is an object of type [ConnectionsArgs](../python/arguments/ConnectionsArgs) that contains inputs/utilities you may choose to use. Some examples include:
   - The **sqrl.proj_vars** attribute, a dictionary for accessing project variables defined in [squirrels.yml].
   - The **sqrl.env_vars** attribute, a dictionary for accessing environment variables defined in [environcfg.yml].
   - The **sqrl.get_credential** method to get username and password from a credential name defined in [environcfg.yml].
