@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksquirrels_docs=self.webpackChunksquirrels_docs||[]).push([[2167],{9265:e=>{e.exports=JSON.parse('{"title":"Tips","slug":"/category/tips","permalink":"/docs/category/tips","navigation":{"previous":{"title":"Modify Dates with dateutils","permalink":"/docs/topics/modify-dates"},"next":{"title":"Deployment","permalink":"/docs/tips/deployment"}}}')}}]);
