@@ -41,6 +41,6 @@ Assume you have a project named "my_proj" with a sample dataset named "my_ds". Y
     - **Path**: GET/POST **/squirrels-v0/my-proj/v1/dataset/my-ds**
     - **Description**: Provides the tabular results of the dataset. Selected values of widget parameters can be provided (through query parameters if GET request or body if POST request).
 
-More details on these API endpoints can be found at [REST API Types](../topics/rest-api).
+More details on these API endpoints can be found at [REST API Types](../client/rest-api).
 
 To shut down the API server, press Ctrl + C.

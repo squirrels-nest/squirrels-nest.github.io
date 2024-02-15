@@ -4,7 +4,8 @@ sidebar_position: 1
 
 # Squirrels Project File
 
-The Squirrels project file (`squirrels.yml`) contains the following sections:
+The Squirrels project file ("squirrels.yml") includes configurations for the project. It contains the following sections:
+
 1. **project_variables**
 2. **packages**
 3. **connections**
@@ -15,9 +16,9 @@ The Squirrels project file (`squirrels.yml`) contains the following sections:
 
 Only the **project_variables** section is required (though there isn't much purpose for a project without a datasets section).
 
-This file can be templated with Jinja. For instance, you can write a section in a separate file and use [Jinja's include](https://ttl255.com/jinja2-tutorial-part-6-include-and-import/) to include it into `squirrels.yml`.
+This file can be templated with Jinja. For instance, you can write a section in a separate file and use [Jinja's include](https://ttl255.com/jinja2-tutorial-part-6-include-and-import/) to include it into "squirrels.yml".
 
-These sections are described in detail below. Use the right-side sidebar to jump to a specific section.
+The sections are described in detail below. Use the right sidebar to jump to a specific section.
 
 ### project_variables
 
@@ -73,10 +74,10 @@ connections:
 
 The fields **name** and **url** are required. The field **credential** is only required if `{username}` and `{password}` are in the **url**, but otherwise optional.
 - **name** - The assigned name of the connection to make it easy to reference elsewhere. The connection name `default` should be defined (either here or in the `connections.py` file), where it becomes the database connection used by default if the connection name is not specified explicitly for the dbview model or widget parameter source.
-- **credential** - Select a credential name defined in the [Environment Configuration File](./environcfg) (i.e. `environcfg.yml`).
+- **credential** - Select a credential name defined in [environcfg.yml].
 - **url** - The SQLAlchemy URL. Placeholders for `{username}` and `{password}` can be included in the URL to substitute the username and password from the specified **credential**.
 
-If you need to use a different URL based on the environment, you can set an environment variable in `environcfg.yml` (such as `my_conn_str`) and use Jinja to substitute environment variables into `squirrels.yml` (such as `url: {{my_conn_str}}`).
+If you need to use a different URL based on the environment, you can set an environment variable in [environcfg.yml] and use Jinja to substitute environment variables into "squirrels.yml" (such as `url: {{ my_conn_str }}`).
 
 :::note
 
@@ -178,14 +179,14 @@ selection_test_sets:
 
 For each test set, the **name** field is required, and the **user_attributes** and **parameters** fields are optional.
 - **name** - The assigned name of the test set to make it easy to reference elsewhere. If the name `default` is defined, it overrides the default selections if no test set is not explicitly referenced.
-- **user_attributes** - If authorization is used, the values of required user attributes (i.e., the attributes defined in the User class in `pyconfigs/auth.py`) are defined here.
+- **user_attributes** - If authentication is used, the values of required user attributes (i.e., the attributes defined in the User class in `pyconfigs/auth.py`) are defined here.
 - **parameters** - The selected parameter values to test with are defined here. For any parameter names that are not specified here, the default selected value is used.
 
 Then, you can test the generation of SQL queries from the Jinja templates using the selections defined in `my_test_set` with `sqrl compile --test-set my_test_set`. If no `--test-set` option is specified, it will use the test set named `default` if it exists, or use all the default values for each parameter selection. 
 
 :::warning
 
-If using authorization and a user attibute is being referenced (in a model for instance), then the test set used with the `sqrl compile` command must define it in the **user_attributes** field. If the user_attribute is not defined for a test set named `default`, then using the `sqrl compile` command without specifying the `--test-set` option will not work.
+If using authentication and a user attibute is being referenced (in a model for instance), then the test set used with the `sqrl compile` command must define it in the **user_attributes** field. If the user_attribute is not defined for a test set named `default`, then using the `sqrl compile` command without specifying the `--test-set` option will not work.
 
 :::
 
@@ -207,17 +208,45 @@ datasets:
 
 For each dataset, the **name** field is required, and the other fields are optional.
 - **name** - The name of the dataset, and is part of URL paths for the parameters and dataset APIs.
-- **label** - The human-friendly title of the dataset that's provided through the catalog API response.
-- **model** - The target model for the dataset. If omitted, Squirrels will use the same model name and the dataset name.
-- **scope** - One of **public**, **protected**, or **private**. All users (authenticated or not) can access public datasets, only authenticated users can access protected datasets, and only internal users can access private datasets.
-- **parameters** - 
-- **traits** - 
+- **label** - The human-friendly title of the dataset that's provided through the catalog API response. If omitted, the **name** is used by default.
+- **model** - The target model for the dataset. If omitted, the **name** is used by default.
+- **scope** - One of **public**, **protected**, or **private**. All users (authenticated or not) can access public datasets, only authenticated users can access protected datasets, and only internal users can access private datasets. If omitted, default is **public**.
+- **parameters** - The list of parameters that this dataset uses. If omitted, all parameters are used.
+- **traits** - A set of variable values defined under this dataset, which may affect the behaviour of data models.
 
+### dbviews
 
+This section allows you to define configurations for dbview models in YAML. The following example sets configurations for a dbview model named `my_dbview`.
+
+```yaml
+dbviews:
+  - name: my_dbview
+    connection_name: my_conn
+```
+
+The **name** field is required and other fields are optional.
+- **name** - The name of the dbview model, which should also be the name of a SQL file in the `models/dbviews/` folder
+- **connection_name** - The connection name of the database this model runs on. See [Database Connections](./database) for more information on defining connection names.
+
+### federates
+
+This section allows you to define configurations for federate models in YAML. The following example sets configurations for a federate model named `my_federate`.
+
+```yaml
+federates:
+  - name: my_federate
+    materialized: view
+```
+
+The **name** field is required and other fields are optional.
+- **name** - The name of the federate model, which should also be the name of a SQL file in the `models/federates/` folder.
+- **materialized** - Defines how the federate model gets materialized in the in-memory database. Options are "table" and "view", with "table" being the default (unless specified otherwise with the **defaults.federates.materialized** [setting]).
 
 ### settings
 
-This section defines the settings that Squirrels would apply to this Squirrels project. See the [Project Settings](./settings) page for the available settings, descriptions, and default values.
+This section defines certain settings that Squirrels would apply to the project. See the [Project Settings](./settings) page for the available settings, descriptions, and default values.
 
 
-[Python parameter classes]: ../category/parameter-classes
+[Python parameter classes]: /docs/category/parameter-classes
+[environcfg.yml]: ./environcfg
+[setting]: ./settings

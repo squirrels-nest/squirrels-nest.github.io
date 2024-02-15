@@ -53,6 +53,8 @@ Every Squirrels project defines a set of related datasets under a single version
 - **Parameters API** - Provides information of the parameter widgets for a given dataset
 - **Dataset API** - Provides the tabular result of a dataset given parameter selections
 
+More details are available on the [REST API Types](./client/rest-api) page under "Client Usage".
+
 ## The Dataset Workflow
 
 Although a dataset is only associated to one target model, the target model may depend on multiple upstream models. When calling the dataset API, the following happens behind the scenes:

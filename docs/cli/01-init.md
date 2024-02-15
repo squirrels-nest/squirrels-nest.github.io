@@ -32,7 +32,7 @@ Additional prompts are also provided to inquire whether certain files (such as `
 |`pyconfigs/connections.py`|Database connections can be defined here if preferred to do so in Python instead of in `squirrels.yml`. See [Database Connections](../topics/database) for more details.|
 |`pyconfigs/parameters.py`|Parameter widgets (for making data analytics **dynamic**) are defined here. Alternatively, they can be defined in `squirrels.yml`, though it can be more verbose. See [Widget Parameters](../topics/parameters) for more details.|
 |`pyconfigs/context.py`|The place to define meaningful variables in Python (derived from parameter selections, dataset traits, etc.) which can then be used to change behaviour of models. See the [Context File](../topics/context) for more details.|
-|`pyconfigs/auth.py`|If authorization is involved, the user model and authentication function is defined here. See [Authorization and Authentication](../topics/auth) for more details.|
+|`pyconfigs/auth.py`|If authentication is involved, the user model and authentication function is defined here. See [Authentication](../topics/auth) for more details.|
 |`models/dbviews/*`|SQL Jinja templates or Python files that define dynamic views of external database(s). See [SQL Models](../topics/models-sql) or [Python Models](../topics/models-python) for more details.|
 |`models/federates/*`|SQL Jinja templates or Python files that define dynamic tables/views that may depend on other models. These tables/views are written to a temporary database embedded in server memory. See [SQL Models](../topics/models-sql) or [Python Models](../topics/models-python) for more details.|
 
