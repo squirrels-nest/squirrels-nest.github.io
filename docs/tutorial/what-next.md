@@ -4,11 +4,11 @@ sidebar_position: 10
 
 # What's Next?
 
-For an expanded version of the "weather example" project, see this git repo here:
+For an expanded version of the "weather example" project, see the "weather_analytics" folder in the "squirrels-examples" github repo found here:
 
-https://github.com/squirrels-nest/squirrels-weather-example
+https://github.com/squirrels-nest/squirrels-examples
 
-It serves as an example of how to share common SQL functionality across multiple datasets while allowing their parameter or query definitions to differ.
+It serves as a good example of sharing common SQL functionality across multiple datasets while allowing their parameter or query definitions to differ.
 
 In addition, the following topic guides can be useful for certain Squirrels projects:
 - [Authentication](../topics/auth)

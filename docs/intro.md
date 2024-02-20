@@ -51,13 +51,13 @@ Every Squirrels project defines a set of related datasets under a single version
 - **Token API** - Retrieve a short-lived API token if the provided credentials are valid
 - **Datasets Catalog API** - Provides a catalog of datasets available under the project (can vary with authentication)
 - **Parameters API** - Provides information of the parameter widgets for a given dataset
-- **Dataset API** - Provides the tabular result of a dataset given parameter selections
+- **Dataset Result API** - Provides the tabular result of a dataset given parameter selections
 
 More details are available on the [REST API Types](./client/rest-api) page under "Client Usage".
 
 ## The Dataset Workflow
 
-Although a dataset is only associated to one target model, the target model may depend on multiple upstream models. When calling the dataset API, the following happens behind the scenes:
+Although a dataset is only associated to one target model, the target model may depend on multiple upstream models. When calling the dataset result API, the following happens behind the scenes:
 
 1. Parameter selections are validated, and context variables are created.
 2. Models are compiled from SQL templates / python functions in upstream order and concurrently if possible. Compilation results are based on parameter selections, context variables, and authenticated user. Note that the compiled models should form a DAG (directed acyclic graph).

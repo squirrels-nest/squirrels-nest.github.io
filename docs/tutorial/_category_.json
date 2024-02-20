@@ -3,6 +3,6 @@
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Simple tutorial to learn all the basics."
+    "description": "Starting with a single command to create a sample Squirrels project for expense transactions analytics, this tutorial will guide you through altering the project to create your own APIs for weather analytics. The process will show you most of the key features of Squirrels!"
   }
 }

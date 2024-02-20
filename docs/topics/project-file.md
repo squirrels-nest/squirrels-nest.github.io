@@ -180,6 +180,7 @@ selection_test_sets:
 For each test set, the **name** field is required, and the **user_attributes** and **parameters** fields are optional.
 - **name** - The assigned name of the test set to make it easy to reference elsewhere. If the name `default` is defined, it overrides the default selections if no test set is not explicitly referenced.
 - **user_attributes** - If authentication is used, the values of required user attributes (i.e., the attributes defined in the User class in `pyconfigs/auth.py`) are defined here.
+  - If needed, you can override the **username** and **is_internal** attributes here as well. If omitted, default values are empty string for **username** and false for **is_internal**.
 - **parameters** - The selected parameter values to test with are defined here. For any parameter names that are not specified here, the default selected value is used.
 
 Then, you can test the generation of SQL queries from the Jinja templates using the selections defined in `my_test_set` with `sqrl compile --test-set my_test_set`. If no `--test-set` option is specified, it will use the test set named `default` if it exists, or use all the default values for each parameter selection. 
@@ -207,7 +208,7 @@ datasets:
 ```
 
 For each dataset, the **name** field is required, and the other fields are optional.
-- **name** - The name of the dataset, and is part of URL paths for the parameters and dataset APIs.
+- **name** - The name of the dataset, and is part of URL paths for the parameters and dataset result APIs.
 - **label** - The human-friendly title of the dataset that's provided through the catalog API response. If omitted, the **name** is used by default.
 - **model** - The target model for the dataset. If omitted, the **name** is used by default.
 - **scope** - One of **public**, **protected**, or **private**. All users (authenticated or not) can access public datasets, only authenticated users can access protected datasets, and only internal users can access private datasets. If omitted, default is **public**.
