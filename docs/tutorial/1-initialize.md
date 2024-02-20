@@ -22,7 +22,7 @@ To confirm it installed properly, run:
 squirrels --version
 ```
 
-Or simply run `sqrl --version` for short:
+Or simply run `sqrl --version` for short.
 
 ## Initialize a Project
 
@@ -82,7 +82,7 @@ In a web browser, go to `http://localhost:4465/` or `http://127.0.0.1:4465/`. Th
 To see the API endpoints that provides the information on the parameters and tabular results on the "Sample Dataset", you can use the following URLs to access the JSON results for the default parameter selections:
 
 1. Parameters API: `http://localhost:4465/squirrels-v0/sample/v1/dataset/dataset-example/parameters`
-2. Dataset API: `http://localhost:4465/squirrels-v0/sample/v1/dataset/dataset-example`
+2. Dataset Result API: `http://localhost:4465/squirrels-v0/sample/v1/dataset/dataset-example`
 
 After you're done with the API server, you can terminate it in the terminal with "Ctrl+C".
 

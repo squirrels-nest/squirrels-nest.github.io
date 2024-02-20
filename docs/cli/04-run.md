@@ -37,7 +37,7 @@ Assume you have a project named "my_proj" with a sample dataset named "my_ds". Y
 - The Parameters API
     - **Path**: GET/POST **/squirrels-v0/my-proj/v1/dataset/my-ds/parameters**
     - **Description**: Provides the widget parameter properties for the dataset. Can provide selected value of a widget parameter (in query parameters if GET request or body if POST request) to show cascaded options of dependent parameters.
-- The Dataset API
+- The Dataset Result API
     - **Path**: GET/POST **/squirrels-v0/my-proj/v1/dataset/my-ds**
     - **Description**: Provides the tabular results of the dataset. Selected values of widget parameters can be provided (through query parameters if GET request or body if POST request).
 
