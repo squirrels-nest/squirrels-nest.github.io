@@ -41,7 +41,7 @@ const config: Config = {
           versions: {
             current: {
               label: '0.2.x',
-              path: '0.2.x'
+              path: ''
             }
           }
         },
@@ -70,7 +70,7 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        // {to: '/blog', label: 'Blog', position: 'left'},
         {
           type: 'docsVersionDropdown',
           position: 'right',
