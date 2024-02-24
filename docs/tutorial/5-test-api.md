@@ -67,6 +67,6 @@ The '2' is the ID for "Month" option defined in `parameters.py`. Now you can use
 sqrl compile --dataset weather_by_time --test-set group_by_month
 ```
 
-This creates files in the `target/compile/group_by_month/weather_by_time` folder.
+This creates new files in the `target/compile/`**`group_by_month`**`/weather_by_time` folder (not the "target/compile/default/weather_by_time" folder we saw before).
 
 See `sqrl compile --help` or the [compile command](../cli/compile) page for more details. 

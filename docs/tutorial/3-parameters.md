@@ -61,10 +61,11 @@ import squirrels as sr
 
 def main(sqrl: sr.ParametersArgs) -> None:
     group_by_options = [
-        sr.SelectParameterOption("g0", "Transaction", columns=["id", "date"]),
-        sr.SelectParameterOption("g1", "Date", columns=["date"]),
-        sr.SelectParameterOption("g2", "Category", columns=["category"]),
-        sr.SelectParameterOption("g3", "Subcategory", columns=["category", "subcategory"]),
+        sr.SelectParameterOption('0', 'Year', dim_col='year'),
+        sr.SelectParameterOption('1', 'Quarter', dim_col='quarter'),
+        sr.SelectParameterOption('2', 'Month', dim_col='month_name', order_by_col='month_order'),
+        sr.SelectParameterOption('3', 'Day of Year', dim_col='day_of_year'),
+        sr.SelectParameterOption('4', 'Condition', dim_col='condition')
     ]
     sr.SingleSelectParameter.Create("group_by_dim", "Group By", group_by_options)
 ```

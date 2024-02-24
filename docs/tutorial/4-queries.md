@@ -62,11 +62,11 @@ This query takes the result of "aggr_weather_metrics" and orders by a column cal
 
 :::info
 
-A few things to note here:
+A few things to note here about the `weather_by_time.sql` model:
 
-1. The **ref** function only exists for federate models to reference other models (which can be other federates in addition to dbviews). In this case, the model depends on running the results from `aggr_weather_metrics.sql` first.
-2. In this query, we are selecting all columns except the "ordering" column, which is what we use in the "ORDER BY" clause instead.
-3. The first line where we set "dim_col" is repeated in `aggr_weather_metrics.sql`. This can be avoided either by using [Jinja's include/import], or by using the `context.py` file which will be discussed later in the tutorial.
+1. In this query, we are selecting all columns except the "ordering" column, which is what we use in the "ORDER BY" clause instead.
+2. The **ref** function only exists for federate models to reference other models (which can be dbviews or other federates). In this example, this model depends on running the results from `aggr_weather_metrics.sql` first, and Squirrels will take care of model execution order.
+3. The first line where we set "dim_col" is repeated in `aggr_weather_metrics.sql` as well. This can be avoided either by using [Jinja's include/import], or by using the `context.py` file which will be discussed later in the tutorial.
 
 :::
 

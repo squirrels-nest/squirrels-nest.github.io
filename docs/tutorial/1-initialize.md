@@ -94,7 +94,7 @@ Now, we will use the init command again to add another sqlite database for the r
 sqrl init --sample-db weather
 ```
 
-Notice that a `weather.db` file is now added to the existing `database` folder.
+A `weather.db` file has now been added to the `database` folder.
 
 
 [python virtual environments]: https://realpython.com/python-virtual-environments-a-primer/
