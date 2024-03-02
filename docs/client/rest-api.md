@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # REST API Types
 
 When interacting the APIs for a single Squirrels project as a client, a sample workflow may look like this:

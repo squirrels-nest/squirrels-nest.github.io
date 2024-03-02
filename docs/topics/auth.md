@@ -87,9 +87,9 @@ When **None** is returned instead of a [WrongPassword] instance, Squirrels will 
 
 The attributes defined in the User model can be used to change the visible parameters options for different groups of user. This is done using the following parameter arguments:
 
-- The **user_attribute** argument of the **Create** or **CreateFromSource** factory methods of the [parameter classes](/docs/category/parameter-classes). This is an optional string, and defines the attribute of the user model to consider.
-- The **user_groups** argument of the constructor for [parameter option classes](/docs/category/parameter-option-classes). This is usually a string or sequence of strings. The parameter option only shows when the value of the specified **user_attribute** above for the current user is one of the values defined for **user_groups**.
-- The **user_group_col** argument of the constructor for [parameter datasource classes](/docs/category/parameter-data-source-classes). This is an optional string, and works similarly to **user_groups** except it defines the column of a lookup table instead of the the values themselves.
+- The **user_attribute** argument of the **Create** or **CreateFromSource** factory methods of the [parameter classes](../category/parameter-classes). This is an optional string, and defines the attribute of the user model to consider.
+- The **user_groups** argument of the constructor for [parameter option classes](../category/parameter-option-classes). This is usually a string or sequence of strings. The parameter option only shows when the value of the specified **user_attribute** above for the current user is one of the values defined for **user_groups**.
+- The **user_group_col** argument of the constructor for [parameter datasource classes](../category/parameter-data-source-classes). This is an optional string, and works similarly to **user_groups** except it defines the column of a lookup table instead of the the values themselves.
 
 As an example, suppose that the user model has an attribute defined for "department" with "engineering" and "sales" as possible values. And we want to create a single-select parameter called "region" with choices "San Francisco" and "New York" for "engineering", and choices "Chicago" and "New York" for "sales". Then the constructed parameter may look like this:
 

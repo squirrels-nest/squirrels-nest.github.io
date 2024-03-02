@@ -248,6 +248,6 @@ The **name** field is required and other fields are optional.
 This section defines certain settings that Squirrels would apply to the project. See the [Project Settings](./settings) page for the available settings, descriptions, and default values.
 
 
-[Python parameter classes]: /docs/category/parameter-classes
+[Python parameter classes]: ../category/parameter-classes
 [environcfg.yml]: ./environcfg
 [setting]: ./settings

@@ -15,4 +15,4 @@ In addition, the following topic guides can be useful for certain Squirrels proj
 - [Modify Dates with dateutils](../topics/modify-dates)
 - [Versioning Best Practices](../tips/versioning)
 
-You can also check out the [CLI References](/docs/category/cli-references) to understand the commands available with Squirrels, or check out the [Python APIs](/docs/category/python-apis) for all the Python methods available with the Squirrels library.
+You can also check out the [CLI References](../category/cli-references) to understand the commands available with Squirrels, or check out the [Python APIs](../category/python-apis) for all the Python methods available with the Squirrels library.

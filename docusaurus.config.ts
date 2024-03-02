@@ -70,7 +70,7 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        // {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/blog', label: 'Blog', position: 'left'},
         {
           type: 'docsVersionDropdown',
           position: 'right',
@@ -94,7 +94,7 @@ const config: Config = {
             },
             {
               label: 'Tutorial',
-              to: '/docs/category/tutorial',
+              to: '/docs/tutorial',
             },
             {
               label: 'CLI References',
@@ -119,7 +119,7 @@ const config: Config = {
           items: [
             {
               label: 'Discord',
-              href: 'https://discord.gg/7fB7dYXrXS',
+              href: 'https://discord.gg/KqUkZX3G',
             },
           ],
         },
