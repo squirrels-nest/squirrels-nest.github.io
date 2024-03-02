@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksquirrels_docs=self.webpackChunksquirrels_docs||[]).push([[5882],{5949:s=>{s.exports=JSON.parse('{"label":"squirrels","permalink":"/blog/tags/squirrels","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

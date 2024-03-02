@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Squirrels Blog</title>
+        <link>https://squirrels-nest.github.io/blog</link>
+        <description>Squirrels Blog</description>
+        <lastBuildDate>Sat, 02 Mar 2024 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Welcome to Squirrels]]></title>
+            <link>https://squirrels-nest.github.io/blog/welcome</link>
+            <guid>https://squirrels-nest.github.io/blog/welcome</guid>
+            <pubDate>Sat, 02 Mar 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Welcome to the official website for Squirrels, an open-source project framework for building your very own REST APIs for dynamic data analytics!]]></description>
+            <content:encoded><![CDATA[<p>Welcome to the official website for <strong>Squirrels</strong>, an open-source project framework for building your very own REST APIs for dynamic data analytics!</p>
+<p>In modern times, REST APIs are considered the "backbone of the internet". It allows two software programs to communicate with each other and share data across the world.</p>
+<p>At the same time, requirements for data analytics are growing in companies across the world. But it often comes down to a few technical data experts to answer the growing number of data questions. For instance, today a company executive may ask for revenue by location for last year, and then tomorrow decide to ask for revenue by day of week for last quarter only. For many organizations, these executives must rely on others to get the information for them rather than being able to retrieve the information themselves (for instance, by clicking a button in a graphical user interface that calls the APIs), even when several of these data queries would take a similar shape but parameterized in different ways.</p>
+<p>This is where Squirrels comes in handy. It merges the two worlds of "REST APIs" and "data analytics" together! By creating dynamic datasets (and their parameters) with a <strong>low-code</strong> framework and exposing them as REST APIs that take query parameters, you can allow others to self-serve the data analytics while having tight control over what they are allowed to query. And it's not just for internal analytics only, it can also be embedded in your customer-facing applications to expose analytics for external users!</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="why-is-it-named-squirrels">Why is it named "Squirrels"?<a href="https://squirrels-nest.github.io/blog/welcome#why-is-it-named-squirrels" class="hash-link" aria-label="Direct link to Why is it named &quot;Squirrels&quot;?" title="Direct link to Why is it named &quot;Squirrels&quot;?">​</a></h2>
+<p>First off, it seems to be the trend that many data-relevant tools are named after animals (Pandas, Koalas, Polars, DuckDB, etc.). Not to mention, Squirrels runs on Python, a programming language named after an animal as well.</p>
+<p>But more importantly, the phonetics of the word "squirrels" sounds like a blend between SQL and URLs, which encapsulates the purpose of this framework very well.</p>]]></content:encoded>
+            <category>welcome</category>
+            <category>squirrels</category>
+        </item>
+    </channel>
+</rss>
