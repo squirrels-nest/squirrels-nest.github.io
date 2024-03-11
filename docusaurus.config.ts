@@ -51,12 +51,19 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        gtag: {
+          trackingID: 'G-ETDDKNQF7K',
+          anonymizeIP: true,
+        },
       } satisfies Preset.Options,
     ],
   ],
 
   themeConfig: {
     image: 'img/squirrels.jpg',
+    metadata: [
+      {name: 'keywords', content: 'squirrels, data, api, dynamic, dynamic data, dynamic data api, data engineering, data analytics, analytics, blog, documentation, home page'}
+    ],
     navbar: {
       title: 'Squirrels',
       logo: {
