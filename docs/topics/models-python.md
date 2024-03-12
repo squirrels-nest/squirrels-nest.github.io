@@ -14,7 +14,7 @@ sqrl init --core --dbview py --federate py
 
 ## File Contents
 
-All Python model files must contain a **main** function with a **sqrl** argument of type [ModelArgs] and return a pandas DataFrame. This may look something like:
+All Python model files must contain a **main** function with a **sqrl** argument of type [ModelArgs] and return a pandas dataframe. This may look something like:
 
 ```python
 def main(sqrl: sr.ModelArgs) -> pd.DataFrame:
@@ -41,7 +41,7 @@ Both also have access to the **sqrl.ctx** member variable, which lets you access
 The **sqrl** argument of [ModelArgs] also include a few additional methods and member variables not included in [ModelDepArgs]. Two common ones include the **sqrl.connections** dictionary and the **sqrl.ref** method.
 
 - The **connections** dictionary contains database connection names as keys and SQLAlchemy engines as values. More details on defining database connections can be found in [Database Connections](./database) page.
-- The **ref** method takes a single string argument for model name and returns the pandas DataFrame for that model. The model name must be defined in the **dependencies** function.
+- The **ref** method takes a single string argument for model name and returns the pandas dataframe for that model. The model name must be defined in the **dependencies** function.
 
 More details can be found in the Python API docs for [ModelDepArgs] and [ModelArgs].
 

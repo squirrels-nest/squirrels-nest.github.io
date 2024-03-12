@@ -2,6 +2,7 @@
   "label": "parameter data source classes",
   "position": 3,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "Classes for the database table source for parameter properties. Instances are usually created with the constructor in parameters.py."
   }
 }
