@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# About the Project 
+# About Squirrels Projects
 
 ## Project Structure
 

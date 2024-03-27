@@ -22,15 +22,15 @@ Creates the configurations for a widget parameter by providing a list of the par
 
 **Required Arguments:**
 
-- name
-- label
-- all_options
+- **name**: A string for the name of the parameter
+- **label**: A string for human-friendly display name for this parameter
+- **all_options**: A sequence of [ParameterOption](../parameter_options/ParameterOption) instances for all parameter options associated to this parameter
 
 **Optional Keyword Arguments:**
 
-- is_hidden
-- user_attribute
-- parent_name
+- **is_hidden**: A boolean for whether the parameter is hidden in the response of the Parameters API. Default is False
+- **user_attribute**: An optional string for the user attribute that may cascade the options for this parameter. If None, then the authorized user has no effect on the selectable parameter options. Default is None
+- **parent_name**: An optional string for the name of the parameter (or "parent parameter") that may cascade the options for this parameter. If None, then other parameters have no effect on the selectable parameter options for this parameter. Default is None
 
 **Returns:** None
 
@@ -40,10 +40,12 @@ Creates the configurations for a widget parameter by providing a lookup table to
 
 **Required Arguments:**
 
-- TBA
+- **name**: A string for the name of the parameter
+- **label**: A string for human-friendly display name for this parameter
+- **data_source**: An instance of a [DataSource](../data_sources/DataSource) which contains details of the lookup table from the external database
+
+**Optional Keyword Arguments:**
+
+Same optional arguments as the **Create** static method.
 
 **Returns:** None
-
-## Non-Static Methods
-
-TBA
